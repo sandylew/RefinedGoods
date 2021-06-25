@@ -3,11 +3,18 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Georgia", cursive;
+    font-family: "Zapf-Chancery", cursive;
+}
+
+p {
+    font-family: "Paloma", cursive;
 }
 
 h2 {
-    color: #1b8e96;
+    color: #29260f;
+    align-items: center; 
+    align-self: center;
+    padding: 20px;
 }
 
 header h2 {
@@ -27,13 +34,14 @@ header h2 {
 }
 
 .row-content {
-    padding: 50px 0;
+    padding: 25px 0;
     border-bottom: 1px ridge;
-    min-height: 200px;
+    min-height: 50px;
+    align: center;
 }
 
 .navbar {
-    background-color: #aaac4c;
+    background-color: #2e8354;
 }
 .tab-content {
     border: 1px solid #DDD;
@@ -45,7 +53,15 @@ header h2 {
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #2e8354
+    
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
 }
 
 .header .navigation-container  {
@@ -56,3 +72,11 @@ header h2 {
     max-width: 1045px;
 }
 
+.horizontal-line {
+	width: 400px;
+	height: 0px;
+	opacity: 30%
+	border-color: #606060;
+	border-width: .75px;
+	border-style: solid;
+}
