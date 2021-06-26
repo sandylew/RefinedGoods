@@ -22,7 +22,7 @@ header h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: rgb(119, 115, 115);
     padding: 20px 0;
 }
 
@@ -37,7 +37,7 @@ header h2 {
     padding: 25px 0;
     border-bottom: 1px ridge;
     min-height: 50px;
-    align: center;
+    box-align: center;
 }
 
 .navbar {
@@ -75,8 +75,9 @@ header h2 {
 .horizontal-line {
 	width: 400px;
 	height: 0px;
-	opacity: 30%
+	opacity: 30%;
 	border-color: #606060;
 	border-width: .75px;
 	border-style: solid;
 }
+

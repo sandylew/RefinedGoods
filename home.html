@@ -25,16 +25,18 @@
 
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-3 align-self-center">
-                    <img src="img/3.png "  class="img-fluid" />
+            <div class="row row-content">
+                <div class="col-6 col-sm-4 col-sm-4 col-xl-4 align-self-center">
+                    <img src="img/2.png" class="img-fluid" />
                 </div>
                 <div class="col align-self-center">
-                    <input id="search" class="col-sm-6 mt-4 ml-4 mr-4 search-term ui-autocomplete-input" type="text" name="q" value="" maxlength="128" autocomplete="off">
-                    <label class="btn btn-dark"> Search</label>
+                    
+                    <input id="search" class="colcol-sm-4 mt-4 ml-1 mr-1" type="text" value placeholder="Search our site">
+                    <label class="label btn btn-dark btn-sm" for="search">Search</label>
+                    
                 </div>
-                <div class="col-md-2 col-xl mt-4 align-self-center">
-                    <i class="fa fa-shopping-cart fa-lg pl-2 pb-3" style="color:black"></i>
+                <div class="col-sm-2 col-xl mt-4 align-self-center">
+                    <i class="fa fa-shopping-cart fa-lg pb-3" style="color:black"></i>
                 </div>
             </div>
         </div>
@@ -43,37 +45,36 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="navigation-container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rgNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="rgNavbar">
-                <div class="navigation-container">
-                    <ul class="navbar-nav">
-                        <li class="nav-item col-md-auto">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item col-3 col-md-auto">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item col-3 col-md-auto">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item col-3 col-md-auto">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav p-1 mx-auto">
+                    <li class="nav-item col-md-auto">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item col-3 col-md-auto">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item col-3 col-md-auto">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item col-3 col-md-auto">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </nav>
-        <div class="row row-content">
-            <div class="col-sm-12 d-block ml-5 mr-5 text-center">
-                <h2>Vintage and Repurposed</h2>
-                <p>We find and reimagine quality furniture and other items</p>
-                
-            </div>
-            <hr/>
+    <div class="row row-content">
+        <div class="col-sm-12 d-block ml-5 mr-5 text-center">
+            <h2>Vintage and Repurposed</h2>
+            <p>We find and reimagine quality furniture and other items</p>
+
         </div>
+        <hr />
+    </div>
     <div class="container">
         <div class="row row-content">
             <div class="col-md-6 ml-5 mr-5">
@@ -94,18 +95,22 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" width="500" height="auto" src="img/WhiteSideTable-thumb.jpg" alt="Refinished Bedside Table" />
+                            <img class="d-block w-100" width="500" height="auto" src="img/WhiteSideTable-thumb.jpg"
+                                alt="Refinished Bedside Table" />
                             <div class="carousel-caption">
                                 <h3>Refinished Bedside Table</h3>
-                                <p class="d-none d-sm-block">Antiqued and well worn side table with refinished teal drawer pulls
+                                <p class="d-none d-sm-block">Antiqued and well worn side table with refinished teal
+                                    drawer pulls
                                 </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" width="500" height="auto" src="img/Cabinet-thumb.jpg" alt="Black Thread Cabinet" />
+                            <img class="d-block w-100" width="500" height="auto" src="img/Cabinet-thumb.jpg"
+                                alt="Black Thread Cabinet" />
                             <div class="carousel-caption">
                                 <h3>Vintage Thread Cabinet</h3>
-                                <p class="d-none d-sm-block">This cabinet is very spacious and makes for great storage space. Also a great conversation piece.</p>
+                                <p class="d-none d-sm-block">This cabinet is very spacious and makes for great storage
+                                    space. Also a great conversation piece.</p>
                             </div>
                         </div>
                     </div>
@@ -121,54 +126,77 @@
                         <i class="fa fa-pause"></i>
                     </button>
                 </div>
+                <a role="button" id="shopButton" class="btn btn-dark mx-auto" style="width: auto">Shop Now
+                </a>
             </div>
         </div>
-    
-            <div class="row row-content align-items-center">
-                <div class="col-sm-4 order-sm-last col-md-3">
-                    <h2 class="text-sm-right">Discover & Review</h2>
+    </div>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm- align-self-center">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p class="d-none d-sm-block">Sign up to receive our newsletter which will keep you up to date on new
+                    items added to the store as well as bring you new blog posts!</p>
+
+                <div class="col-sm-12 align-self-center">
+                    <input id="subscribe" class="col-sm-4 mt-4 ml-2 mr-2">
+                    <label class="btn btn-dark"> Subscribe</label>
                 </div>
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
-                            alt="Breadcrumb Trail thumbnail" />
-    
-                        <div class="media-body align-self-center">
-                            <h3>Our Campsites</h3>
-                            <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave
-                                your
-                                own reviews!</p>
-                        </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#"class="text-success">Home</a></li>
+                            <li><a href="about.html" class="text-success">About</a></li>
+                            <li><a href="#" class="text-success">Shop</a></li>
+                            <li><a href="#"class="text-success">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a href="http://instagram.com/"><i class="fa fa-instagram fa-md text-success" style=></i></a>
+                        <a href="http://facebook.com/"><i class="fa fa-facebook fa-md text-success"></i></a>
+                        <a href="http://twitter.com/"><i class="fa fa-twitter fa-md text-success"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h5>Contact</h5>
+                        <i class="fa fa-phone fa-md text-success"></i> 1-608-123-4567<br />
+                        <i class="fa fa-envelope fa-md text-success"></i> refinedgoods@gmail.com
                     </div>
                 </div>
             </div>
-        </div>
-    <footer>
+        </footer>
 
-    </footer>
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function() {
-            $(".carousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause"); 
-                }
+        <script>
+            $(function () {
+                $(".carousel").carousel({ interval: 2000 });
+                $("#carouselButton").click(function () {
+                    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                        $(".carousel").carousel("pause");
+                        $("#carouselButton").children("i").removeClass("fa-pause");
+                        $("#carouselButton").children("i").addClass("fa-play");
+                    } else {
+                        $(".carousel").carousel("cycle");
+                        $("#carouselButton").children("i").removeClass("fa-play");
+                        $("#carouselButton").children("i").addClass("fa-pause");
+                    }
+                });
             });
-        });
 
-    </script>
+        </script>
 </body>
 
 </html>
