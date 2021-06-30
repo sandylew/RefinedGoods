@@ -26,17 +26,18 @@
     <header>
         <div class="container">
             <div class="row row-content">
-                <div class="col-6 col-sm-4 col-sm-4 col-xl-4 align-self-center">
-                    <img src="img/2.png" class="img-fluid" />
+                <div class="col-7 col-sm-5 col-md-4 col-xl-4 ">
+                    <img src="img/2.png" class="img-fluid max-width:40%; max-height: auto" />
                 </div>
                 <div class="col align-self-center">
-                    
-                    <input id="search" class="colcol-sm-4 mt-4 ml-1 mr-1" type="text" value placeholder="Search our site">
-                    <label class="label btn btn-dark btn-sm" for="search">Search</label>
-                    
+
+                    <input id="search" class="col-sm-8 mt-4 ml-1 mr-1" type="text" value
+                        placeholder="Search our site">
+                    <label class="label btn btn-dark btn-sm mt-1" for="search">Search</label>
+
                 </div>
-                <div class="col-sm-2 col-xl mt-4 align-self-center">
-                    <i class="fa fa-shopping-cart fa-lg pb-3" style="color:black"></i>
+                <div class="col-sm-2 mt-4 align-self-center">
+                    <i class="fa fa-shopping-cart fa-2x pb-1" style="color:black"></i>
                 </div>
             </div>
         </div>
@@ -57,10 +58,10 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item col-3 col-md-auto">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item col-3 col-md-auto">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
 
@@ -68,16 +69,18 @@
         </div>
     </nav>
     <div class="row row-content">
-        <div class="col-sm-12 d-block ml-5 mr-5 text-center">
-            <h2>Vintage and Repurposed</h2>
-            <p>We find and reimagine quality furniture and other items</p>
+        <div class="col d-block p-6 text-center">
+            <h2><strong>Vintage and Repurposed</strong></h2>
+            <p>
+                <italic>We find and reimagine quality furniture and other items</italic>
+            </p>
 
         </div>
         <hr />
     </div>
     <div class="container">
         <div class="row row-content">
-            <div class="col-md-6 ml-5 mr-5">
+            <div class="col-7 p-3 mx-auto">
                 <h2>Featured Products</h2>
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -134,69 +137,102 @@
 
     <div class="container">
         <div class="row row-content">
-            <div class="col-sm- align-self-center">
+            <div class="col align-self-center pl-5">
                 <h3>Subscribe to Our Newsletter</h3>
                 <p class="d-none d-sm-block">Sign up to receive our newsletter which will keep you up to date on new
                     items added to the store as well as bring you new blog posts!</p>
-
-                <div class="col-sm-12 align-self-center">
-                    <input id="subscribe" class="col-sm-4 mt-4 ml-2 mr-2">
-                    <label class="btn btn-dark"> Subscribe</label>
+                <label class="btn btn-dark btn-lg" id="subscribeButton"> Subscribe</label>
+            </div>
+        </div>
+    </div>
+    <div id="subscribeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Subscribe to our Newsletter</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="subscribeName">Password</label>
+                                    <input type="name" class="form-control form-control-sm" id="subscribeName"
+                                        placeholder="Full Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="subscribeEmail"
+                                        placeholder="Enter Email Address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-dark btn-sm ml-1">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#"class="text-success">Home</a></li>
-                            <li><a href="about.html" class="text-success">About</a></li>
-                            <li><a href="#" class="text-success">Shop</a></li>
-                            <li><a href="#"class="text-success">Blog</a></li>
-                        </ul>
-                    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <h5>Contact</h5>
+                    <i class="text-footer fa fa-phone fa-md"></i> 1-608-123-4567<br />
+                    <i class="text-footer fa fa-envelope fa-md"></i> refinedgoods@gmail.com
+                </div>
+                <div class="col-3  text-center">
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram fa-md text-footer"></i></a>
+                    <a href="http://facebook.com/"><i class="fa fa-facebook fa-md text-footer"></i></a>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter fa-md text-footer"></i></a>
+                </div>
 
-                    <div class="col-6 col-sm-5 text-center">
-                        <h5>Social</h5>
-                        <a href="http://instagram.com/"><i class="fa fa-instagram fa-md text-success" style=></i></a>
-                        <a href="http://facebook.com/"><i class="fa fa-facebook fa-md text-success"></i></a>
-                        <a href="http://twitter.com/"><i class="fa fa-twitter fa-md text-success"></i></a>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <h5>Contact</h5>
-                        <i class="fa fa-phone fa-md text-success"></i> 1-608-123-4567<br />
-                        <i class="fa fa-envelope fa-md text-success"></i> refinedgoods@gmail.com
+                <div class="col-4 col-sm-5 text-center">
+                    <h5>Menu</h5>
+                    <div class="nav nav-footer">
+                        <a href="home.html" class="nav-footer">Home</a>
+                        <a href="about.html" class="nav-footer">About</a>
+                        <a href="shop.html" class="nav-footer">Shop</a>
+                        <a href="blog.html" class="nav-footer">Blog</a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script>
-            $(function () {
-                $(".carousel").carousel({ interval: 2000 });
-                $("#carouselButton").click(function () {
-                    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                        $(".carousel").carousel("pause");
-                        $("#carouselButton").children("i").removeClass("fa-pause");
-                        $("#carouselButton").children("i").addClass("fa-play");
-                    } else {
-                        $(".carousel").carousel("cycle");
-                        $("#carouselButton").children("i").removeClass("fa-play");
-                        $("#carouselButton").children("i").addClass("fa-pause");
-                    }
-                });
+    <script>
+        $(function () {
+            $(".carousel").carousel({ interval: 2000 });
+            $("#carouselButton").click(function () {
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
             });
+        });
 
-        </script>
+        $("#subscribeButton").click(function () {
+            $("#subscribeModal").modal("show");
+        });
+
+    </script>
 </body>
 
 </html>

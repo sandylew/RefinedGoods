@@ -30,11 +30,9 @@
                     <img src="img/2.png" class="img-fluid max-width:40%; max-height: auto" />
                 </div>
                 <div class="col align-self-center">
-
                     <input id="search" class="col-sm-8 mt-4 ml-1 mr-1" type="text" value
                         placeholder="Search our site">
                     <label class="label btn btn-dark btn-sm mt-1" for="search">Search</label>
-
                 </div>
                 <div class="col-sm-2 mt-4 align-self-center">
                     <i class="fa fa-shopping-cart fa-2x pb-1" style="color:black"></i>
@@ -58,10 +56,10 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item col-3 col-md-auto">
-                        <a class="nav-link active" href="shop.html">Shop</a>
+                        <a class="nav-link" href="shop.html">Shop</a>
                     </li>
-                    <li class="nav-item col-3 col-md-auxto">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                    <li class="nav-item col-3 col-md-auto">
+                        <a class="nav-link active" href="blog.html">Blog</a>
                     </li>
                 </ul>
 
@@ -69,45 +67,56 @@
         </div>
     </nav>
     <div class="row row-content">
-        <div class="col d-block p-4 text-center">
-            <h2><strong>Available Items</strong></h2>
-            <div class="card-group col-sm-12 p-2">
-                <div class="card">
-                    <img class="d-flex m-3 img-thumbnail" src="img/WhiteSideTable-thumb.jpg"
-                    alt="Refinished White Cabinet thumbnail" />
-                    <div class="card-body media-body align-self-center">
-                        <h4><strong>Refinished Side Table</strong></h4>
-                        <p class="card-text d-none d-sm-block">Antiqued Side Table with teal drawer pulls</p>
-                        <h4><strong>$79</strong></h4>
-                        <label id="btn-shop" class="label btn-shop btn-sm mt-1">Add to Cart</label>
-                    </div>
+        <div class="col d-block p-6 text-center">
+            <h2><strong>Blog</strong></h2>
+            <p>Follow our blog entries and subscribe to our newsletter</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col align-self-center pl-5">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p class="d-none d-sm-block">Sign up to receive our newsletter which will keep you up to date on new
+                    items added to the store as well as bring you new blog posts!</p>
+                <label class="btn btn-dark btn-lg" id="subscribeButton"> Subscribe</label>
+            </div>
+        </div>
+    </div>
+    <div id="subscribeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Subscribe to our Newsletter</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="card">
-                    <img class="d-flex m-3 img-thumbnail" src="img/DadsGarage-thumb.jpg"
-                    alt="Dad's Garage Sign" />
-                    <div class="card-body media-body align-self-center">
-                        <h4><strong>Dad's Garage Sign</strong></h4>
-                        <p class="card-text d-none d-sm-block">Unique metal sign for Dad's garage</p>
-                        <h4><strong>$49</strong></h4>
-                        <label class="label btn-shop btn-sm mt-1">Add to Cart</label>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="d-flex m-3 img-thumbnail" src="img/Cabinet-thumb.jpg"
-                    alt="Dad's Garage Sign" />
-                    <div class="card-body media-body align-self-center">
-                        <h4><strong>Vintage Spool Cabinet</strong></h4>
-                        <p class="card-text d-none d-sm-block">Vintage commercial spool cabinet has multiple drawers for storage. </p>
-                        <h4><strong>$179</strong></h4>
-                        <label class="label btn-shop btn-sm mt-1">Add to Cart</label>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="subscribeName">Password</label>
+                                    <input type="name" class="form-control form-control-sm" id="subscribeName"
+                                        placeholder="Full Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="subscribeEmail"
+                                        placeholder="Enter Email Address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-dark btn-sm ml-1">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
+    
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -125,15 +134,15 @@
 
                 <div class="col-4 col-sm-5 text-center">
                     <h5>Menu</h5>
-                        <div class="nav nav-footer">
+                    <div class="nav nav-footer">
                         <a href="home.html" class="nav-footer">Home</a>
                         <a href="about.html" class="nav-footer">About</a>
                         <a href="shop.html" class="nav-footer">Shop</a>
                         <a href="blog.html" class="nav-footer">Blog</a>
-                        </div>                    
                     </div>
                 </div>
-            </div>       
+            </div>
+        </div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
@@ -141,7 +150,27 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script> document.querySelector("body > main > section.category-product-list.product-list.test.layout-module > div.products")</script>
+    <script>
+        $(function () {
+            $(".carousel").carousel({ interval: 2000 });
+            $("#carouselButton").click(function () {
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
+            });
+        });
+
+        $("#subscribeButton").click(function () {
+            $("#subscribeModal").modal("show");
+        });
+
+    </script>
 </body>
 
 </html>

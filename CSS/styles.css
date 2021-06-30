@@ -2,12 +2,18 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Zapf-Chancery", cursive;
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+}
+
+h2, h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
 }
 
 p {
-    font-family: "Paloma", cursive;
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -22,7 +28,7 @@ header h2 {
 }
 
 .site-footer {
-    background-image: rgb(119, 115, 115);
+    background-color: rgb(231, 238, 240);
     padding: 20px 0;
 }
 
@@ -41,7 +47,8 @@ header h2 {
 }
 
 .navbar {
-    background-color: #2e8354;
+    background-color: #62c6ad;
+    font-size: 17pt;
 }
 .tab-content {
     border: 1px solid #DDD;
@@ -53,7 +60,7 @@ header h2 {
 }
 
 .carousel {
-    border: solid #2e8354
+    border: solid #2ce2c4;
     
 }
 
@@ -81,3 +88,44 @@ header h2 {
 	border-style: solid;
 }
 
+.btn-shop {
+    background-color: #62c6ad;
+    color: white;
+}
+
+.products {
+    color: #444444;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-title {
+    font:"Open sans";
+    font-size: 16pt;
+    color:white;
+}
+
+#subscribeModal .modal-header {
+    background-color: #62c6ad;
+    color: white;
+}
+
+.text-footer {
+    color:#62c6ad;
+}
+
+.nav-footer {
+    color:#62c6ad;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
