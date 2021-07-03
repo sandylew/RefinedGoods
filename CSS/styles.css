@@ -40,15 +40,15 @@ header h2 {
 }
 
 .row-content {
-    padding: 25px 0;
+    padding: 15px 0;
     border-bottom: 1px ridge;
-    min-height: 50px;
-    box-align: center;
+    min-height: 30px;
+ 
 }
 
 .navbar {
     background-color: #62c6ad;
-    font-size: 17pt;
+    font-size: 14pt;
 }
 .tab-content {
     border: 1px solid #DDD;
@@ -97,15 +97,13 @@ header h2 {
     color: #444444;
     text-align: left;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .modal-title {
@@ -121,6 +119,7 @@ header h2 {
 
 .text-footer {
     color:#62c6ad;
+    font-size: 10px;
 }
 
 .nav-footer {
